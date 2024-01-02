@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us</title>
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+</head>
+<body>
+    <div class="header">
+        <header class="Barra-de-navegacao">
+            <a href="index.html"><img src="images/logo_marca.png" alt="logo" id="logo"></a>
+            <div class="Pesquisar">
+                <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+                <img src="images/lupa.png" alt="">
+            </div>
+            <div class="Carrinho">
+                <p onclick="criarConta()">Crie sua conta</p>
+                <p onclick="logar()">Entre</p>
+                <p onclick="sobre()">Sobre</p>
+                <img src="images/carrinho.png " alt="">
+            </div>
+        </header>
+    </div>
+        <div class="container">
+            <div class="aux">
+                <div class="left">
+                    <div class="produtos">
+                        <div class="produto" data-nome="The Last of Us" data-preco="249.90">
+                            <h1>The Last of Us</h1>
+                            <img src="images/tlou.jpg" alt="The Last of Us" id="tlou">
+                            <p>Você consegue sobreviver em um mundo pós-apocalíptico?</p>
+                            <button class="btn" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="carrinho">
+                        <h2>Seu Carrinho</h2>
+                        <ul id="carrinhoLista"></ul>
+                        <p id="totalCarrinho">Total: R$ <span id="totalValor">0.00</span></p>
+                        <button class="btn" onclick="finalizarCompra()">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <h1>Descrição</h1>
+                <p>The Last of Us se passa no ano de 2033, vinte anos após o início de uma pandemia causada por um fungo capaz de infectar humanos e controlar seus cérebros. Joel, um sobrevivente solitário que perdeu sua filha adolescente no início do apocalipse, recebe a missão de levar para fora de uma zona de quarentena uma menina de 14 anos, chamada Ellie. A jovem é a única humana conhecida que é imune ao fungo e se torna a esperança de uma cura.</p>
+                <table class="tabela">
+                    <tr>
+                        <td>Gênero</td>
+                        <td>Ação/Aventura</td>
+                    </tr>
+                    <tr>
+                        <td>Desenvolvedor</td>
+                        <td>Naughty Dog</td>
+                    </tr>
+                    <tr>
+                        <td>Distribuidora</td>
+                        <td>Playstation</td>
+                    </tr>
+                    <tr>
+                        <td>Lançamento</td>
+                        <td>14 de junho de 2013</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    <script src="assets/js/carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@font-face{
+    font-family: logo;
+    src: url(assets/webfonts/NEON\ CLUB\ MUSIC_medium.otf) format('opentype');
+}
+
+* {   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans',sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background-color: #201b2c;
+}
+
+.aux{
+    display: flex;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrinho{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: decimal;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color :#00ff88;
+    border-radius: 30px;
+    padding: 5px;
+    width: 20vw;
+    font-size: large;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 20vw 20vh 20vw;
+}
+
+.tabela{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20vh;
+    margin-top: 5vh;
+    padding: 10px;
+}
+
+td{
+    padding-right: 30px;
+}
+
+.Barra-de-navegacao {
+    background-color: #00ff88;
+    box-shadow: 0px 30px 40px -10px #00ff8052;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.Carrinho img {
+    width: 20px;
+    height: 20px;
+}
+
+.Carrinho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+}
+
+.Carrinho p{
+    cursor: pointer;
+}
+
+
+.Pesquisar img {
+    width: 20px;
+}
+
+.Pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Pesquisar input {
+    width: 50vw;
+    padding: 5px;        
+    margin-right: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+
+img{
+    width: 20vw;
+}
+
+@media only screen and (max-width: 950px){
+    .Pesquisar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .aux{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 50vw;
+    }
+    .info p{
+        display: none;
+    }
+    .produto p{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        width: 50vw;
+    }
+    .Pesquisar{
+        display: none;
+    }
+
+    .left{
+        height: 50vh;
+    }
+    
+    .tabela{
+        padding: 5px;
+        margin-top: 2px;
+    }
+
+    .right{
+        height: 50vh;
+    }
+    #tlou{
+        width: 35vw;
+    }
+    #cadeira{
+        width: 35vw;
+    }
+}

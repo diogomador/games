@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Games</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <header class="Barra-de-navegacao">
+            <a href="index.html"><img src="images/logo_marca.png" alt="logo" id="logo"></a>
+            <div class="Pesquisar">
+                <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+                <img src="images/lupa.png" alt="">
+            </div>
+            <div class="Carrinho">
+                <p onclick="criarConta()">Crie sua conta</p>
+                <p onclick="logar()">Entre</p>
+                <p onclick="sobre()">Sobre</p>
+                <img src="images/carrinho.png " alt="">
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div id="slides">
+            <div class="slide">
+                <img src="images/slide3.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/slide2.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="Slide 3">
+            </div>
+        
+                <button class="btn" id="ant" onclick="plusSlides(-1)">⍇</button>
+                <button class="btn" id="prox" onclick="plusSlides(1)">⍈</button>
+            </div>
+    </div>
+
+    <div class="Container2">
+        <div class="Produtos">
+            <img src="images/notebook_produto.jpg" alt="">
+            <h1>Notebook Dell G15</h1>
+            <p>12ª geração Intel® Core™ i7-12700H <br>NVIDIA® GeForce® RTX™ 3060, 6GB GDDR6 <br>Full HD de 15.6", 165Hz</p>
+            <button onclick="note(this)">Comprar</button>
+        </div>
+
+        <div class="Produtos">
+            <img src="images/tlou.jpg" alt="" height="100px">
+            <h1>The Last of Us</h1>
+            <p>Conheça a história emocionante de The Last of Us™, vencedor de mais de 200 prêmios de Jogo do Ano</p>
+            <button onclick="tlou(this)">Comprar</button>
+        </div>
+
+        <div class="Produtos" id="produto1">
+            <img src="images/cadeira.png" alt="">
+            <h1>Cadeira Gamer</h1>
+            <p>Cadeira Gamer Modelo THE FIRST</p>
+            <button onclick="cadeira(this)">Comprar</button>
+        </div>
+    </div>
+
+        <div class="footer">
+            <div class="informacoes">
+                <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/payment.svg" alt="">
+                <h3>Escolha como pagar</h3>
+                <p>Com o Espaço Games, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado Crédito.</p>
+            </div>
+
+            <div class="informacoes">
+                <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/shipping.svg" alt="">
+                <h3>Escolha como pagar</h3>
+                <p>Com o Espaço Games, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado Crédito.</p>
+            </div>
+            
+            <div class="informacoes">
+                <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/protected.svg" alt="">
+                <h3>Escolha como pagar</h3>
+                <p>Com o Espaço Games, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado Crédito.</p>
+            </div>
+        </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

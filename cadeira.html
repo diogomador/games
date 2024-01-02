@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadeira</title>
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+</head>
+<body>
+    <div class="header">
+        <header class="Barra-de-navegacao">
+            <a href="index.html"><img src="images/logo_marca.png" alt="logo" id="logo"></a>
+            <div class="Pesquisar">
+                <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+                <img src="images/lupa.png" alt="">
+            </div>
+            <div class="Carrinho">
+                <p onclick="criarConta()">Crie sua conta</p>
+                <p onclick="logar()">Entre</p>
+                <p onclick="sobre()">Sobre</p>
+                <img src="images/carrinho.png " alt="">
+            </div>
+        </header>
+    </div>
+        <div class="container">
+            <div class="aux">
+                <div class="left">
+                    <div class="produtos">
+                        <div class="produto" data-nome="Cadeira Gamer" data-preco="799.00">
+                            <h1>Cadeira Gamer</h1>
+                            <img src="images/cadeira.png" alt="Cadeira" id="cadeira">
+                            <p>Cadeira Gamer Azul Sem Apoio De Pé</p>
+                            <button class="btn" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="carrinho">
+                        <h2>Seu Carrinho</h2>
+                        <ul id="carrinhoLista"></ul>
+                        <p id="totalCarrinho">Total: R$ <span id="totalValor">0.00</span></p>
+                        <button class="btn" onclick="finalizarCompra()">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <h1>Descrição</h1>
+                <p>Esta Cadeira foi desenvolvida para criar uma aparência do estilo Gamer, com tática de jogadores habilidosos, um setup de respeito. A estrutura precisa ser confortável para horas de gameplay e conta com tecnologia da VIA GAMER que possui design perfurado com materiais especiais para não armazenar calor e aumentar a circulação de ar, proporcionando ao jogador o conforto que merece. O seu design exclusivo é inspirado nos bancos de carros esportivos, possuindo também leves curvaturas que se ajustam perfeitamente ao corpo. Apoio para as pernas também são ajustáveis e possui 2 direções. Estilo e conforto estão garantidos em nossas cadeiras gamer.</p>
+                <table class="tabela">
+                    <tr>
+                        <td>Modelo</td>
+                        <td>THE FIRST</td>
+                    </tr>
+                    <tr>
+                        <td>Apoio Braços</td>
+                        <td>Ligação com encosto e assento</td>
+                    </tr>
+                    <tr>
+                        <td>Apoio Perna</td>
+                        <td>Não</td>
+                    </tr>
+                    <tr>
+                        <td>Suporta</td>
+                        <td>130kg</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    <script src="assets/js/carrinho.js"></script>
+</body>
+</html>

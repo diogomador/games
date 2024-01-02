@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça Registro <br>E entre para a Espaço Games</h1>
+            <img src="images/online-games-addiction-animate.svg" alt="Animation" class="left-login-img">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1 style="font-family: logo;">REGISTRO</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <i onclick="mostrarSenha()"><img src="images/olho_aberto.png" alt=""></i>
+                </div>
+                <div class="textfield">
+                    <label for="user">Criar Como:</label>
+                    <select name="user" id="choice">
+                        <option value="CL">Cliente</option>
+                        <option value="VE">Vendedor</option>
+                    </select>
+                </div>
+            <button class="btn-login" onclick="register()">Criar</button>
+        </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

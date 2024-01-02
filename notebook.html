@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell G15</title>
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+</head>
+<body>
+    <div class="header">
+        <header class="Barra-de-navegacao">
+            <a href="index.html"><img src="images/logo_marca.png" alt="logo" id="logo"></a>
+            <div class="Pesquisar">
+                <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+                <img src="images/lupa.png" alt="">
+            </div>
+            <div class="Carrinho">
+                <p onclick="criarConta()">Crie sua conta</p>
+                <p onclick="logar()">Entre</p>
+                <p onclick="sobre()">Sobre</p>
+                <img src="images/carrinho.png " alt="">
+            </div>
+        </header>
+    </div>
+        <div class="container">
+            <div class="aux">
+                <div class="left">
+                    <div class="produtos">
+                        <div class="produto" data-nome="Notebook Dell G15" data-preco="14999.99">
+                            <h1>Notebook Dell G15</h1>
+                            <img src="images/notebook1.avif" alt="">
+                            <p>12ª geração Intel® Core™ i7-12700H <br>NVIDIA® GeForce® RTX™ 3060, 6GB GDDR6 <br>Full HD de 15.6", 165Hz</p>
+                            <button class="btn" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="carrinho">
+                        <h2>Seu Carrinho</h2>
+                        <ul id="carrinhoLista"></ul>
+                        <p id="totalCarrinho">Total: R$ <span id="totalValor">0.00</span></p>
+                        <button class="btn" onclick="finalizarCompra()">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <h1>Descrição</h1>
+                <p>A Dell conta com o Notebook Gamer Dell G15 15-5520 Intel Core i7 12700H 15,6" 16GB SSD 512 GB Windows 11 GeForce RTX 3060, que vem com o sistema operacional Windows 11 de fábrica. Quanto às dimensões, o 15-5520 tem 35.7cm de largura, 27.2cm de profundidade e 2.6cm de altura, pesando 2.5kg. O 15-5520 possui tela de 15.6" e resolução Full HD. O laptop 15-5520, da Dell, vem equipado com um processador Intel Core i7 12700H de 12ª Geração e uma memória RAM de 16.0GB que é expansível até 32.0GB. Em armazenamento, o Dell 15-5520 utiliza um SSD de 512.0GB. A placa de vídeo GeForce RTX 3060 é a responsável por renderizar gráficos de games e programas de edição, por ser uma placa Dedicada (Off-Board). Este notebook traz portas USB 3.2, Thunderbolt 4, HDMI, Ethernet (RJ-45), Áudio. Para conexões sem fio, o Dell 15-5520 conta com Bluetooth, Wi-Fi (2.4 GHz e 5.0 GHz), Wi-Fi (6.0 GHz).</p>
+                <table class="tabela">
+                    <tr>
+                        <td>Processador</td>
+                        <td>Intel Core i7 12700H</td>
+                    </tr>
+                    <tr>
+                        <td>Sistema Operacional</td>
+                        <td>Windows 11</td>
+                    </tr>
+                    <tr>
+                        <td>Memória RAM</td>
+                        <td>16GB</td>
+                    </tr>
+                    <tr>
+                        <td>Placa de Vídeo</td>
+                        <td>GeForce RTX 3060</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    <script src="assets/js/carrinho.js"></script>
+</body>
+</html>
